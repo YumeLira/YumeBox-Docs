@@ -1,103 +1,48 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "almond",
+  "name": "An open-source Android client based on the mihomo kernel",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/yume.png",
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
+        "group": "开始 ",
+        "icon": "arrow-up-down",
+        "pages": [
+          "index",
+          "guide/install",
+          "guide/building"
         ]
       },
       {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
+        "group": "更新日志",
+        "icon": "history",
+        "pages": [
+          "update/history"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/yume.png",
+    "dark": "/logo/yume.png"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "https://github.com/YumeLira/YumeBox/issues"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Github",
+      "href": "https://github.com/YumeLira/YumeBox"
     }
   },
   "contextual": {
@@ -112,11 +57,48 @@
      "vscode"
    ]
   },
+  "seo": {
+    "metatags": {
+      "robots": "index, follow",
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "googlebot": "index, follow",
+      "generator": "YumeBox",
+      "theme-color": "#f56c6c",
+      "format-detection": "telephone=no",
+      "referrer": "origin",
+      "rating": "general",
+      "revisit-after": "7 days",
+      "language": "zh-CN",
+      "copyright": "YumeLira",
+      "distribution": "global",
+      "HandheldFriendly": "True",
+      "MobileOptimized": "320",
+      "apple-mobile-web-app-capable": "yes",
+      "apple-mobile-web-app-status-bar-style": "black",
+      "apple-mobile-web-app-title": "YumeBox",
+      "application-name": "YumeBox",
+      "msapplication-TileColor": "#f56c6c",
+      "og:type": "website",
+      "og:image": "https://repository-images.githubusercontent.com/1031102671/e7aa3919-03a2-4d2e-a160-913152684721",
+      "og:site_name": "YumeBox",
+      "og:locale": "zh_CN"
+    }
+  },
+  "metadata": {
+    "timestamp": true
+  },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "telegram": "https://t.me/OOM_Group",
+      "github": "https://github.com/YumeYuka"
+    }
+  },
+  "errors": {
+    "404": {
+      "redirect": true,
+      "title": "找不到页面",
+      "description": "这个_页面_到底**发生了什么**？"
     }
   }
 }
