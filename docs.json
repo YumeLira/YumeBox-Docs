@@ -12,21 +12,31 @@
   },
   "favicon": "/logo/yume.png",
   "navigation": {
-    "groups": [
+    "languages": [
       {
-        "group": "开始 ",
-        "icon": "arrow-up-down",
-        "pages": [
-          "index",
-          "guide/install",
-          "guide/building"
+        "language": "en",
+        "groups": [
+          {
+            "group": "Documentation",
+            "icon": "book-open",
+            "pages": [
+              "index",
+              "update/history"
+            ]
+          }
         ]
       },
       {
-        "group": "更新日志",
-        "icon": "history",
-        "pages": [
-          "update/history"
+        "language": "cn",
+        "groups": [
+          {
+            "group": "文档",
+            "icon": "book-open",
+            "pages": [
+              "cn/index",
+              "cn/update/history"
+            ]
+          }
         ]
       }
     ]
@@ -72,7 +82,7 @@
       "referrer": "origin",
       "rating": "general",
       "revisit-after": "7 days",
-      "language": "zh-CN",
+      "language": "en-US",
       "copyright": "YumeLira",
       "distribution": "global",
       "HandheldFriendly": "True",
@@ -85,7 +95,7 @@
       "og:type": "website",
       "og:image": "https://repository-images.githubusercontent.com/1031102671/e7aa3919-03a2-4d2e-a160-913152684721",
       "og:site_name": "YumeBox",
-      "og:locale": "zh_CN"
+      "og:locale": "en_US"
     }
   },
   "metadata": {
@@ -100,8 +110,8 @@
   "errors": {
     "404": {
       "redirect": true,
-      "title": "找不到页面",
-      "description": "这个_页面_到底**发生了什么**？"
+      "title": "Page not found",
+      "description": "The page you requested does not exist."
     }
   }
 }
